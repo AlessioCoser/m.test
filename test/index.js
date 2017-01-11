@@ -1,18 +1,10 @@
 const {ok} = require('assert')
-const {test} = require('..')
+const {test} = require('../index2.js')
 
-test('runner works!', function (done) {
+test('runner works!', function () {
   ok(true)
-  done()
 })
 
-test('runner fails!', function (done) {
+test('runner fails!', function () {
   ok(false)
-  done()
-})
-
-test('runner works async!', function (done) {
-  setTimeout(function (done) {
-    done()
-  }, 0, done)
 })
